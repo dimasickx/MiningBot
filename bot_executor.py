@@ -9,8 +9,8 @@ class TelegramBot:
 
     def __init__(self):
         self.dp = Dispatcher(self.bot)
-        self.decorator = self.dp.message_handler(commands=['switch'])
-        self.decorator(self.switch_mode)
+        decorator = self.dp.message_handler(commands=['switch'])
+        decorator(self.switch_mode)
 
     async def switch_mode(self, *args):
         path = 'C:\\Users\\Dimik\\Desktop\\my_mining\\'
