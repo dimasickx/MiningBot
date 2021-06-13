@@ -13,7 +13,7 @@ class TelegramBot:
         decorator(self.switch_mode)
 
     async def switch_mode(self, *args):
-        path = 'C:\\Users\\Dimik\\Desktop\\my_mining\\'
+        path = 'C:'
         call(f"{path}{int(self.switcher)}.bat")  # script name 0.bar or 1.bat
         self.switcher = not self.switcher
 
